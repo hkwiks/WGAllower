@@ -16,12 +16,10 @@ public class Commands implements CommandExecutor {
             String prefix = Utils.getPrefix();
             if(label.equals("allowerinfo")){
                 if(sender instanceof Player){
-                    if(sender.isOp()) {
-                        sender.sendMessage(Utils.format(prefix + "Кликните ПКМ по блоку."));
-                        Player player = (Player) sender;
-                        WGAllower.getInstance().playerHashMap.put(player, player);
-                        return true;
-                    }
+                   sender.sendMessage(Utils.format(prefix + "Кликните ПКМ по блоку."));
+                   Player player = (Player) sender;
+                   WGAllower.getInstance().playerHashMap.put(player, player);
+                   return true;
                 }
             }
         }
