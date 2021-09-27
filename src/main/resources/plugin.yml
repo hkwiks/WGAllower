@@ -1,0 +1,8 @@
+name: WGAllower
+version: '${project.version}'
+main: ua.hkwiks.wgallower.WGAllower
+api-version: 1.16
+authors: [Henta1]
+website: vk.com/hkwiks
+commands:
+  allowerinfo:
